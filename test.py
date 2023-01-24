@@ -1,7 +1,7 @@
 import requests
 import json
 from bs4 import BeautifulSoup
-import datetime
+from datetime import datetime
 
 response = requests.get("http://paullab.synology.me/stock.html")
 
