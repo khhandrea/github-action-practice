@@ -1,4 +1,4 @@
-name: helloGithubAction
+name: scheduleAction
  
 on:
     schedule:
