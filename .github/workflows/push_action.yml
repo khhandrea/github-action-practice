@@ -1,4 +1,4 @@
-name: helloGithubAction
+name: pushAction
  
 on:
     push:
