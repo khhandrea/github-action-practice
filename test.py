@@ -1,6 +1,7 @@
 import requests
 import json
 from bs4 import BeautifulSoup
+import datetime
 
 response = requests.get("http://paullab.synology.me/stock.html")
 
@@ -48,4 +49,5 @@ with open('data.js', "r", encoding="UTF-8-sig") as f:
 #파일에 변수명을 추가하여 다시 쓴다. (js 파일이기 때문)
 final_data = f"var data = {data};"
 with open('data.js', "w", encoding="UTF-8-sig") as f_write:
+    f_write.write(f'#{datetime.today().strftime("%Y%m%d-%H:%M:%S")}')
     f_write.write(final_data)
